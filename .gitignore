@@ -1,0 +1,4 @@
+venv
+*.pyc
+customes_manage.db
+.env
