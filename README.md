@@ -6,6 +6,7 @@ Ele permite realizar operações de **CRUD** (Create, Read, Update, Delete) com 
 ---
 
 ## 🚀 Funcionalidades
+
 - Cadastro de novos clientes
 - Listagem de clientes
 - Edição de informações
@@ -16,6 +17,7 @@ Ele permite realizar operações de **CRUD** (Create, Read, Update, Delete) com 
 ---
 
 ## 📂 Estrutura
+
 - `main.py` — Arquivo principal, inicializa o app Flask  
 - `configuration.py` — Configuração de rotas e banco  
 - `database/database.py` — Conexão com o banco PostgreSQL  
@@ -29,53 +31,55 @@ Ele permite realizar operações de **CRUD** (Create, Read, Update, Delete) com 
 
 ## ⚙️ Como executar
 
-### 1. Clone o repositório:
-```bash
-git clone https://github.com/PietroHenriqueAndrade/gestao-clientes-flask.git
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/PietroHenriqueAndrade/gestao-clientes-flask.git
 cd gestao-clientes-flask
 
+   ```
 2. Crie e ative um ambiente virtual:
-python -m venv venv
-
-No Linux/Mac:
-source venv/bin/activate
-
-No Windows:
-venv\Scripts\activate
-
+   ```bash
+   python -m venv venv
+   ```
 3. Instale as dependências:
-pip install -r requirements.txt
-
+   ```bash
+   pip install -r requirements.txt
+   ```
 4. Configure o banco de dados criando um arquivo .env na raiz do projeto:
-echo "DATABASE_URL=postgres://usuario:senha@localhost:5432/minha_base" > .env
-
-
+   ```bash
+   echo "DATABASE_URL=postgres://usuario:senha@localhost:5432/minha_base" > .env
+   ```
 ⚠️ Substitua usuario, senha e minha_base pelas suas credenciais do PostgreSQL.
 
 5. Execute a aplicação:
-python main.py
+   ```bash
+   python main.py
+   ```
+---
 
+## 🛠️ Tecnologias
 
-Agora acesse em:
-👉 http://localhost:5000
+- Python
+- Flask
+- Peewee ORM
+- PostgreSQL
+- Bootstrap 5
+-JavaScript (fetch API / AJAX)
 
-🛠️ Tecnologias
+---
 
-Python
-Flask
-Peewee ORM
-PostgreSQL
-Bootstrap 5
-JavaScript (fetch API / AJAX)
+## 📌 Observações
 
-📌 Observações
 O projeto utiliza o Peewee ORM para abstração do banco de dados.
 O JavaScript (cru.js) foi customizado para interceptar formulários e botões, tornando o CRUD mais dinâmico.
 Projeto desenvolvido para fins de aprendizado em Flask + Banco de Dados + Front-end integrado.
 
-👨‍💻 Autor
-Feito por Pietro Henrique Gomes de Andrade
-📧 Email: hpietro540@gmail.com
-💼 LinkedIn:https://www.linkedin.com/in/pietro-andrade-a6061a386 
-🐙 GitHub: https://github.com/PietroHenriqueAndrade
 
+---
+
+## 👨‍💻 Autor
+
+Feito por **Pietro Henrique Gomes de Andrade**  
+📧 Email: hpietro540@gmail.com 
+💼 [LinkedIn](https://www.linkedin.com/in/pietro-andrade-a6061a386)  
+🐙 [GitHub](https://github.com/PietroHenriqueAndrade)
