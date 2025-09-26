@@ -33,8 +33,8 @@ Ele permite realizar operações de **CRUD** (Create, Read, Update, Delete) com 
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/PietroHenriqueAndrade/gestao-clientes-flask.git
-   cd gestao-clientes-flask
+   git clone https://github.com/PietroHenriqueAndrade/Projeto-Flask.git
+   cd Projeto-Flask
 
    ```
 2. Crie e ative um ambiente virtual:
