@@ -1,4 +1,22 @@
-venv
-*.pyc
-customes_manage.db
+# Ambiente virtual
+venv/
 .env
+
+# Cache do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Banco de dados local (caso crie SQLite)
+*.db
+
+# Configurações de IDEs/editores
+.vscode/
+.idea/
+
+# Arquivos de logs
+*.log
+
+# Arquivos temporários
+*.tmp

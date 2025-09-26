@@ -1,0 +1,180 @@
+/* ============================
+   ESTILO GLOBAL
+============================ */
+body {
+  font-family: "Inter", "Segoe UI", Roboto, sans-serif;
+  background: #f4f7fb;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h5 {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+a:hover {
+  color: #0056d2;
+}
+
+/* Container */
+.container {
+  max-width: 1100px;
+}
+
+/* ============================
+   CARDS
+============================ */
+.card {
+  border-radius: 16px;
+  border: none;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.1);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2c3e50;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ============================
+   BOTÕES
+============================ */
+.btn-primary {
+  background: linear-gradient(135deg, #007bff, #0056d2);
+  border: none;
+  font-weight: 600;
+  padding: 0.6rem 1.3rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+.btn-primary:hover {
+  background: linear-gradient(135deg, #0056d2, #003f99);
+  transform: scale(1.03);
+}
+
+.btn-outline-secondary {
+  border-radius: 8px;
+  font-weight: 500;
+}
+.btn-outline-secondary:hover {
+  background: #f1f1f1;
+}
+
+/* ============================
+   MODAL
+============================ */
+.modal-content {
+  border-radius: 16px;
+  border: none;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+.modal-header {
+  border-bottom: none;
+}
+.modal-footer {
+  border-top: none;
+}
+
+/* ============================
+   FORMULÁRIOS
+============================ */
+form label {
+  font-weight: 500;
+  color: #555;
+}
+form input, form select, form textarea {
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  padding: 0.6rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+form input:focus, form select:focus, form textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.15);
+  outline: none;
+}
+
+/* ============================
+   LISTA / TABELAS
+============================ */
+.table {
+  border-radius: 12px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+}
+.table th {
+  background: #f8fafc;
+  font-weight: 600;
+  color: #2c3e50;
+}
+.table td, .table th {
+  padding: 1rem;
+  vertical-align: middle;
+}
+.table tbody tr:hover {
+  background: #f4f7fb;
+}
+
+/* Ações */
+.action-link {
+  font-weight: 500;
+  margin: 0 0.3rem;
+  transition: color 0.2s ease;
+}
+.action-link:hover {
+  text-decoration: underline;
+}
+.action-link.delete {
+  color: #e74c3c;
+}
+.action-link.delete:hover {
+  color: #c0392b;
+}
+
+/* ============================
+   HEADERS / TITULOS
+============================ */
+h1.text-primary {
+  font-size: 2.5rem;
+  background: linear-gradient(135deg, #000000, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Tornar títulos menores com .text-primary pretos (modal DETALHES CLIENTE) */
+h3.text-primary, h4.text-primary, h5.text-primary {
+  color: #000 !important;
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  -webkit-text-fill-color: unset !important;
+}
+
+/* ============================
+   RESPONSIVIDADE
+============================ */
+@media (max-width: 768px) {
+  h1.text-primary {
+    font-size: 2rem;
+  }
+  .card-title {
+    font-size: 1.1rem;
+  }
+  .btn-primary {
+    width: 100%;
+  }
+}
